@@ -1,0 +1,38 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.sqlite
+*.sqlite3
+*.db
+
+# ---- Virtual Environment ----
+venv/
+.venv/
+ENV/
+env/
+
+# ---- Environment Variables ----
+.env
+.env.*
+*.env
+
+# ---- VSCode ----
+.vscode/
+*.code-workspace
+
+# ---- Alembic ----
+alembic/__pycache__/
+alembic/versions/__pycache__/
+alembic/versions/*.pyc
+
+# ---- Logs ----
+*.log
+logs/
+log/
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
