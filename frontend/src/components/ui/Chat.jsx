@@ -25,7 +25,7 @@ function Chat({chat}) {
       {/* Chat info */}
       <div className="flex flex-col justify-center ml-4 overflow-hidden">
         <h3 className="text-lg font-semibold text-white">{displayName}</h3>
-        <p className="text-[13px] text-gray-300">{chat.last_message.content}</p>
+        <p className="text-[13px] text-gray-300">{chat?.last_message?.content||"No meassage"}</p>
       </div>
     </div>
   );

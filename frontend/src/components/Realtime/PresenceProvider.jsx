@@ -4,7 +4,7 @@ export default function PresenceProvider({ children }) {
   useEffect(() => {
   const token = localStorage.getItem("access_token");
   if (!token) return;
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL.replace("http://", "");;
   const ws = new WebSocket(`ws://${API_URL}/ws/online?token=${token}`);
 
   ws.onopen = () => console.log("✅ Connected to /ws/online");
